@@ -4,7 +4,6 @@ body {
 }
 
 .contact-information {
-	height: 250px;
 	width: 100%;
 
 }
@@ -25,52 +24,47 @@ h2.junior-dev {
 }
 
 .information-links {
-	padding-top: 10em;
 	list-style: none;
-	margin: auto;
+	display: inline-block;
 
 }
 
-ul.information-links li {
+.github {
+	margin-left: 90px;
+}
+
+.linked-in {
+	margin-left: 370px;
+}
+
+.twitter {
+	margin-left: 650px;
+}
+
+.resume {
+	margin-left: 930px;
+}
+
+.launch {
+	margin-left: 1210px;
+}
+
+
+div.contact-information {
 	display: inline;
-	margin:6%;
-	width: 100%;
+	opacity: 0.5;
 
 }
 
-.linked-in-button {
-	border-radius: 12px;
-	height:85px;
-	width:85px;
-	margin-bottom: 50px;
+.information-links li a img {
+	height: 90px;
+	width: 90px;
+	border-radius: .8em;
+	display: inline-block;
 
 }
 
-.launch-button {
-	border-radius: 12px;
-	height:85px;
-	width:85px;
 
-}
 
-.twitter-button {
-	border-radius: 12px;
-	height:85px;
-	width:85px;
 
-}
 
-.github-button {
-	border-radius: 12px;
-	height:85px;
-	width:85px;
-
-}
-
-.resume-button {
-	border-radius: 12px;
-	height:85px;
-	width:85px;
-	margin-bottom: 50px;
-
-}

@@ -1,45 +1,68 @@
+<!doctype html>
 <html>
 <head>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+
 <LINK href="./css/index.css" rel="stylesheet" type="text/css">
 </head>
-<div class="container">
 <body>
+<div class="container">
 <h1 class="name">
 	Christopher Lemieux
 </h1>
 <h2 class="junior-dev">Junior Developer</h2>
-<div class="contact-information">
-	<ul class="information-links">
-		<li class="information-links" id="icon">
-			<a class="github" href="https://github.com/clemieux55">
-				<image class="github-button" src="./images/github.jpeg">
-		</a>
-		</li>
-		<li class="breakable-toy" id="icon">
-			<a class="linked-in" href="http://www.linkedin.com/in/christopherlemieux1">
-				<image class="linked-in-button" src="./images/imgres.jpeg" id="button">
-			</a>
-		</li>
-		<li class="twitter" id="icon">
-			<a href="https://twitter.com/chrislem55" class="twitter">
-				<image class="twitter-button" src="./images/twitter.jpeg" id="button">
-			</a>
-		</li>
-		<li class="resume" id="icon">
-			<a href="https://docs.google.com/file/d/0B44S4vEPBhmqTEx4S0dGeDU3U2c/edit?usp=sharing">
-				<image class="resume-button" src="./images/resume.jpeg" id="button">
-			</a>
-		</li>
-		<li class="launch" id="icon">
-			<a href="http://launchacademy.com">
-				<image class="launch-button" src="./images/launch.jpg" id="button">
-			</a>
-		</li>
-	</ul>
+<div class="contact-information" id="contact">
+	<ul class="information-links" id="tha-links">
 
+		<li class="github" id="icon-github">
+			<a href="https://github.com/clemieux55">
+				<image class="github-button" src="./images/github.jpeg">
+			</a>
+		</li>
+
+		<li class="linked-in" id="icon-linked">
+			<a href="http://www.linkedin.com/in/christopherlemieux1">
+				<image src="./images/imgres.jpeg">
+			</a>
+		</li>
+
+		<li class="twitter" id="icon-twitter">
+			<a href="https://twitter.com/chrislem55">
+				<image class="twitter-button" src="./images/twitter.jpeg">
+			</a>
+		</li>
+
+		<li class="resume" id="icon-resume">
+			<a href="https://docs.google.com/file/d/0B44S4vEPBhmqTEx4S0dGeDU3U2c/edit?usp=sharing">
+				<image class="resume-button" src="./images/resume.jpeg">
+			</a>
+		</li>
+
+		<li class="launch" id="icon-launch">
+			<a href="http://launchacademy.com">
+				<image class="launch-button" src="./images/launch.jpg">
+			</a>
+		</li>
+
+	</ul>
+</div>
 </div>
 
 </body>
-</div>
+
+<script type="text/javascript">
+
+$('a').mouseover(function() {
+	$(this).fadeTo( 1000, 0.4, function() {
+		backToNormal(this);
+	});
+});
+
+function backToNormal(element) {
+	$(element).fadeTo( 1000, 1.0, function() {
+	});
+};
+
+</script>
 </html>
