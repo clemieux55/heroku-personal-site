@@ -1,5 +1,8 @@
 <html>
+<head>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <LINK href="./css/index.css" rel="stylesheet" type="text/css">
+</head>
 <div class="container">
 <body>
 <h1 class="name">
@@ -8,34 +11,45 @@
 <h2 class="junior-dev">Junior Developer</h2>
 <div class="contact-information">
 	<ul class="information-links">
-		<li class="information-links">
+		<li class="information-links" id="icon">
 			<a class="github" href="https://github.com/clemieux55">
 				<image class="github-button" src="./images/github.jpeg">
 		</a>
 		</li>
-		<li class="breakable-toy">
+		<li class="breakable-toy" id="icon">
 			<a class="linked-in" href="http://www.linkedin.com/in/christopherlemieux1">
-				<image class="linked-in-button" src="./images/imgres.jpeg">
+				<image class="linked-in-button" src="./images/imgres.jpeg" id="button">
 			</a>
 		</li>
-		<li class="twitter">
+		<li class="twitter" id="icon">
 			<a href="https://twitter.com/chrislem55" class="twitter">
-				<image class="twitter-button" src="./images/twitter.jpeg">
+				<image class="twitter-button" src="./images/twitter.jpeg" id="button">
 			</a>
 		</li>
-		<li class="resume">
+		<li class="resume" id="icon">
 			<a href="https://docs.google.com/file/d/0B44S4vEPBhmqTEx4S0dGeDU3U2c/edit?usp=sharing">
-				<image class="resume-button" src="./images/resume.jpeg">
+				<image class="resume-button" src="./images/resume.jpeg" id="button">
 			</a>
 		</li>
-		<li class="launch">
+		<li class="launch" id="icon">
 			<a href="http://launchacademy.com">
-				<image class="launch-button" src="./images/launch.jpg">
+				<image class="launch-button" src="./images/launch.jpg" id="button">
 			</a>
 		</li>
 	</ul>
 
 </div>
+
+
+<script type="text/javascript">
+$( document ).ready(function(){
+$('#button').hover(function(){
+	$(this).fadeout({
+		}
+	});
+});
+</script>
+
 
 </body>
 </div>
