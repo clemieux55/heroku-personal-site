@@ -60,7 +60,9 @@ $('a').mouseover(function() {
 });
 
 function backToNormal(element) {
+	$(element).mouseleave(function() {
 	$(element).fadeTo( 1000, 1.0, function() {
+		})
 	});
 };
 
