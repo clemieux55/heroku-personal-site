@@ -7,6 +7,16 @@ h1 {
 	text-align: center;
 }
 
+h2 {
+	margin-top: -10px;
+	text-align: center;
+}
+
+div.container{
+	width: auto;
+	height: auto;
+}
+
 div#border {
 	height:1px;
 	background-color: black;
@@ -16,6 +26,7 @@ div#border {
 
 div#contact-list ul {
 	list-style: none;
+
 }
 
 div#contact-list ul li img {
@@ -26,12 +37,6 @@ div#contact-list ul li img {
 
 div#contact-list {
 	margin: 0 auto;
-
-}
-
-div.container{
-	width: auto;
-
 }
 
 div#list-items {
@@ -42,7 +47,6 @@ div#list-items {
 	margin:0;
 	border-right: 1px solid black;
 	opacity: 0.80;
-
 }
 
 div#education {
@@ -56,7 +60,8 @@ div#education {
 	opacity: 0.60;
 }
 
-div#contact-information {
+div#contact-projects {
+	padding-top: 10px;
 	text-align: center;
 	width:53%;
 	height:350px;
@@ -65,3 +70,7 @@ div#contact-information {
 	opacity: 0.80;
 }
 
+.active {
+	height: 90px;
+	width: 90px;
+}

@@ -12,12 +12,14 @@
 	<h1 class="name">
 		Christopher Lemieux
 	</h1>
+	<h2>Junior Software Developer</h2>
 	<div id="border"></div>
+	
 	<div id="contact-list">
 		<div id="list-items">
 			<ul>
 				<li>
-					<a href="#"><image src="images/twitter.jpeg"></image></a>
+					<a href="https://twitter.com/chrislem55"><image src="images/twitter.jpeg"></image></a>
 				</li>
 
 				<li>
@@ -25,11 +27,11 @@
 				</li>
 
 				<li>
-					<a href="#"><image src="images/github.jpeg"></image></a>
+					<a href="https://github.com/clemieux55"><image src="images/github.jpeg"></image></a>
 				</li>
 
 				<li>
-					<a href="#"><image src="images/imgres.jpeg"></image></a>
+					<a href="www.linkedin.com/in/christopherlemieux1"><image src="images/imgres.jpeg"></image></a>
 				</li>
 			</ul>
 		</div>
@@ -39,20 +41,23 @@
 				<p>Ten Week Software Development Bootcamp teaching Ruby and Ruby on Rails with a focus in Test Driven Development. Internship teaching agile practices with the goal to turn a complete beginner into a qualified full stack junior web developer guided by experienced engineers. </p>
 		</div>
 
-		<div id="contact-information">
+		<div id="contact-projects">
 			<h2>Current Projects</h2>
 			<div>
 				<a href="#">Budget Application</a>
 				<p>Manage personal budget needs</p>
 			</div>
 			<div>
-				<a href="#">Better Than Grandmas</a>
+				<a href="better-than-grandmas.herokuapp.com">Better Than Grandmas</a>
 				<p>Recipe sharing app</p>
 			</div>
 		</div>
 
 	</div>
+
 </div>
+<div id="footer"></div>
+</body>
 </html>
 
 <script type="text/javascript">
@@ -78,14 +83,21 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-	fullOpacity($("div#contact-information"), function() {
+	fullOpacity($("div#contact-projects"), function() {
 	});
 })
 
 $(document).ready(function(){
-	backToNormal($("div#contact-information"), function() {
+	backToNormal($("div#contact-projects"), function() {
 	});
 });
+
+$("a").hover(function() {
+	$(this).addClass(".hover");
+	}, function() {
+		$(this).removeClass(".hover");
+	}
+);
 
 function fullOpacity (element) { 
 	element.mouseover(function() {
