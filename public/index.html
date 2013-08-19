@@ -16,26 +16,26 @@
 	<div id="contact-list">
 		<div id="list-items">
 			<ul>
-				<li id="contact-information">
+				<li>
 					<a href="#"><image src="images/twitter.jpeg"></image></a>
 				</li>
 
-				<li id="contact-information">
+				<li>
 					<a href="www.twitter.com"><image src="images/resume.jpeg"></image></a>
 				</li>
 
-				<li id="contact-information">
+				<li>
 					<a href="#"><image src="images/github.jpeg"></image></a>
 				</li>
 
-				<li id="contact-information">
+				<li>
 					<a href="#"><image src="images/imgres.jpeg"></image></a>
 				</li>
 			</ul>
 		</div>
 
 		<div id="education">
-			<image src="images/launch.jpeg">
+			<image src="images/launch.jpeg" id="launch">
 				<p>Ten Week Software Development Bootcamp teaching Ruby and Ruby on Rails with a focus in Test Driven Development. Internship teaching agile practices with the goal to turn a complete beginner into a qualified full stack junior web developer guided by experienced engineers. </p>
 		</div>
 
@@ -56,26 +56,49 @@
 </html>
 
 <script type="text/javascript">
-$("a").mouseover(function() {
-	backToAbnormal("a");
+
+$(document).ready(function(){
+	fullOpacity($("div#list-items"), function() {
+	});
+})
+
+$(document).ready(function(){
+	backToNormal($("div#list-items"), function() {
+	});
 });
 
-$("a").mouseleave(function() {
-	backToNormal("a");
+$(document).ready(function(){
+	fullOpacity($("div#education"), function() {
+	});
+})
+
+$(document).ready(function(){
+	backToNormal($("div#education"), function() {
+	});
 });
 
+$(document).ready(function(){
+	fullOpacity($("div#contact-information"), function() {
+	});
+})
 
-function backToNormal(element) {
-	var element = $(element)
+$(document).ready(function(){
+	backToNormal($("div#contact-information"), function() {
+	});
+});
 
-	element.fadeTo(400, 1.00)
-}
+function fullOpacity (element) { 
+	element.mouseover(function() {
+		element.fadeTo(500, 1.00);		
+	});
+};
 
-function backToAbnormal(element) {
-	var element = $(element)
+function backToNormal (element) {
+	element.mouseleave(function() {
+		element.fadeTo(500, 0.60);
+	});
+};
 
-	element.fadeTo(400, 0.40)
-}
 
 
 </script>
