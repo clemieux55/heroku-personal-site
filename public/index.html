@@ -2,69 +2,69 @@
 <html>
 <head>
 <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="jscript/index.js"></script>
 <LINK href="./css/index.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+
 <div class="container">
-<h1 class="name">
-	Christopher Lemieux
-</h1>
-<h2 class="junior-dev">Junior Developer</h2>
-<div class="contact-information" id="contact">
-	<ul class="information-links" id="tha-links">
+	<h1 class="name">
+		Christopher Lemieux
+	</h1>
+	<div id="contact-list">
+		<div id="list-items">
+			<ul>
+				<li id="contact-information">
+					<a href="#"><image src="images/twitter.jpeg"></image></a>
+				</li>
 
-		<li class="github" id="icon-github">
-			<a href="https://github.com/clemieux55">
-				<image class="github-button" src="./images/github.jpeg">
-			</a>
-		</li>
+				<li id="contact-information">
+					<a href="www.twitter.com"><image src="images/resume.jpeg"></image></a>
+				</li>
 
-		<li class="linked-in" id="icon-linked">
-			<a href="http://www.linkedin.com/in/christopherlemieux1">
-				<image src="./images/imgres.jpeg">
-			</a>
-		</li>
+				<li id="contact-information">
+					<a href="#"><image src="images/github.jpeg"></image></a>
+				</li>
 
-		<li class="twitter" id="icon-twitter">
-			<a href="https://twitter.com/chrislem55">
-				<image class="twitter-button" src="./images/twitter.jpeg">
-			</a>
-		</li>
+				<li id="contact-information">
+					<a href="#"><image src="images/imgres.jpeg"></image></a>
+				</li>
+			</ul>
+		</div>
 
-		<li class="resume" id="icon-resume">
-			<a href="https://docs.google.com/file/d/0B44S4vEPBhmqTEx4S0dGeDU3U2c/edit?usp=sharing">
-				<image class="resume-button" src="./images/resume.jpeg">
-			</a>
-		</li>
+		<div id="education">
+			<image src="images/launch.jpeg">
+		</div>
 
-		<li class="launch" id="icon-launch">
-			<a href="http://launchacademy.com">
-				<image class="launch-button" src="./images/launch.jpg">
-			</a>
-		</li>
-
-	</ul>
+		<div id="contact-information">
+			hello
+		</div>
+	</div>
 </div>
-</div>
-
-</body>
+</html>
 
 <script type="text/javascript">
-
-$('a').mouseover(function() {
-	$(this).fadeTo( 1000, 0.4, function() {
-		backToNormal(this);
-	});
+$("a").mouseover(function() {
+	backToAbnormal("a");
 });
 
+$("a").mouseleave(function() {
+	backToNormal("a");
+});
+
+
 function backToNormal(element) {
-	$(element).mouseleave(function() {
-	$(element).fadeTo( 1000, 1.0, function() {
-		})
-	});
-};
+	var element = $(element)
+
+	element.fadeTo(400, 1.00)
+}
+
+function backToAbnormal(element) {
+	var element = $(element)
+
+	element.fadeTo(400, 0.40)
+}
+
 
 </script>
-</html>

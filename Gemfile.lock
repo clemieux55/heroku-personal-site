@@ -1,10 +1,12 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    rack (1.5.2)
+    bootstrap-sass (2.3.2.1)
+      sass (~> 3.2)
+    sass (3.2.10)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  rack
+  bootstrap-sass
