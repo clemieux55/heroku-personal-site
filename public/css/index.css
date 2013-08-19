@@ -1,10 +1,21 @@
-div#contact-list ul {
-	list-style: none;
+html {
+	background-color: #5C8093;
+	font-family: "Copperplate / Copperplate Gothic Light", sans-serif;
 }
 
-div#contact-list ul li:nth-child(2n) {
-	margin-left: 20px;
+h1 {
+	text-align: center;
+}
 
+div#border {
+	height:1px;
+	background-color: black;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+div#contact-list ul {
+	list-style: none;
 }
 
 div#contact-list ul li img {
@@ -17,27 +28,34 @@ div#contact-list {
 
 }
 
-div#container{
-	width: 960px;
+div.container{
+	width: auto;
+
 }
 
 div#list-items {
+	text-align: center;
 	float:left;
-	width:33%;
+	width:20%;
+	height:350px;
 	margin:0;
-	background-color: pink;
 }
+
 div#education {
+	text-align: center;
 	float:left;
-	width: 33%;
+	width: 20%;
 	margin:0;
-	background-color: lightblue;
+	height:350px;
+
 }
 
 div#contact-information {
-	width:33%;
+	text-align: center;
+	width:60%;
+	height:350px;
 	margin:0;
 	float: left;
-	background-color: lightgreen;
 
 }
+
